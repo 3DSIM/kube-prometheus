@@ -3,10 +3,8 @@ kind: Service
 metadata:
   name: prometheus-frontend
 spec:
-  type: NodePort
   ports:
   - name: web
-    nodePort: 30100
     port: 9090
     protocol: TCP
     targetPort: web

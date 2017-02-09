@@ -11,7 +11,7 @@ data:
           source_labels:
           - __meta_kubernetes_service_name
         - action: keep
-          regex: monitoring
+          regex: default
           source_labels:
           - __meta_kubernetes_namespace
         - action: keep

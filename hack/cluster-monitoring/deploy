@@ -5,7 +5,7 @@ if [ -z "${KUBECONFIG}" ]; then
 fi
 
 if [ -z "${NAMESPACE}" ]; then
-    NAMESPACE=monitoring
+    NAMESPACE=default
 fi
 
 kubectl create namespace "$NAMESPACE"
